@@ -118,7 +118,7 @@ syn match i3ConfigResource /^\s*set_from_resource\s\+.*$/ contains=i3ConfigResou
 " Auto start applications
 syn keyword i3ConfigExecKeyword exec exec_always contained
 syn match i3ConfigNoStartupId /--no-startup-id/ contained " We are not using i3ConfigBindArgument as only no-startup-id is supported here
-syn match i3ConfigExec /^\s*exec\(_always\)\?\s\+.*$/ contains=i3ConfigExecKeyword,i3ConfigNoStartupId,i3ConfigString
+syn match i3ConfigExec /^\s*exec\(_always\)\?\s\+.*$/ contains=i3ConfigExecKeyword,i3ConfigNoStartupId,i3ConfigString,i3ConfigVariable
 
 " Automatically putting workspaces on specific screens
 syn keyword i3ConfigWorkspaceKeyword workspace contained
